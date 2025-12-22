@@ -1,9 +1,9 @@
 import Card from "./card"
 
-function Dashboard({name,occ}) {
+function Dashboard({name,occ,nameChange}) {
     return(
     
-       <Card name={name} occ={occ}>
+        <Card name={name} occ={occ} nameChange={nameChange}>
         
        </Card>
     )

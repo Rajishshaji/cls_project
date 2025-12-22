@@ -1,9 +1,14 @@
-function Card({name,occ}) {
+function Card({name,occ,nameChange}) {
     return(
         <>
-            <h1>{name}</h1>
-            <h2>{occ}</h2>
+            <div>
+                <h1>{name}</h1>
+                <h2>{occ}</h2>
+            </div>
+            <button onClick={nameChange}>
+                name change
+            </button>
         </>
     )
 }
-export default Card
+export default Card 
