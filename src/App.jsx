@@ -14,10 +14,14 @@ function App(){
         console.log=(name)
     }
     return(
-    
+    <>
        <Dashboard name={name} occ={occ} nameChange={nameChange}>
         
        </Dashboard>
+       <Counter name={name} occ={occ} nameChange={nameChange} >
+
+       </Counter>
+    </>
     )
 }
 

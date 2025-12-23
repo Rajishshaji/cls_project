@@ -2,15 +2,19 @@ import React, { useState } from "react";
 
 function Counter() {
     const [count, setCount] = useState(0);
-
-    return (
-        <button
-            onClick={() => setCount((c) => c + 1)}
-            style={{ padding: "8px 12px", fontSize: 16, cursor: "pointer" }}
-        >
-            Count: {count}
-        </button>
-    );
+    function increment() {
+        setCount(count+1)
+    }
+    function decrement() {
+        setCount(count-1)
+    }
+    return(
+        <>
+        <h2>{count}</h2>
+        <button onClick={increment}>plus</button>
+        <button onClick={decrement}>-</button>
+        </>
+    )
 }
 
-export default Counter;
+export default Counter
